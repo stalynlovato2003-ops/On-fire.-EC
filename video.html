@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video — ON FIRE STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script>window.tailwind = { config: { theme: { extend: { colors: { canvas: '#000000', section: '#121212', sectionMid: '#1A1A1A', divider: '#262626', bodymuted: '#A3A3A3', accent: '#FF0033' } } } } }</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-canvas text-white">
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm bg-black/40 border-b border-divider">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 font-heading font-bold"><img src="logo/logo-blanco.jpeg" alt="ON FIRE STUDIO" width="36" height="36" class="object-contain" /><span>ON FIRE STUDIO</span></a>
+      <nav class="flex gap-6 text-bodymuted">
+        <a href="photography.html">Fotografía</a>
+        <a href="video.html" class="text-white">Video</a>
+        <a href="sound.html">Sonido</a>
+        <a href="design.html">Diseño</a>
+      </nav>
+    </div>
+  </header>
+  <main class="pt-24">
+    <section class="min-h-screen py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-5xl font-heading font-extrabold">VIDEO & FILMMAKING</h1>
+        <div class="mt-8">
+          <div class="w-full aspect-video bg-section rounded overflow-hidden relative" id="mainVideo">
+            <video id="player" class="w-full h-full object-cover" src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2016.44.52.mp4" preload="metadata"></video>
+            <div class="absolute bottom-4 left-4 right-4 flex items-center gap-4">
+              <button id="playBtn" class="play-btn w-12 h-12"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="#fff"/></svg></button>
+              <input id="seek" type="range" min="0" max="100" value="0" class="flex-1 accent-accent" />
+              <button id="fsBtn" class="px-3 py-2 border border-divider rounded">Full</button>
+            </div>
+          </div>
+
+          <div class="mt-12 grid md:grid-cols-4 gap-6">
+            <div class="md:col-span-3 bg-section rounded overflow-hidden">
+              <video id="theaterPlayer" class="w-full h-full object-cover" controls poster="imagenes/hang.jpg">
+                <source src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2016.44.52.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
+            </div>
+            <aside class="bg-section p-4 rounded">
+              <h3 class="font-bold mb-4">Otros videos</h3>
+              <div class="space-y-3">
+                <button class="w-full rounded overflow-hidden cursor-pointer thumb" data-src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2016.44.52.mp4">
+                  <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.21.40.jpeg" class="w-full rounded" alt="Video 16.44.52" />
+                </button>
+                <button class="w-full rounded overflow-hidden cursor-pointer thumb" data-src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2017.24.22.mp4">
+                  <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.08.jpeg" class="w-full rounded" alt="Video 17.24.22" />
+                </button>
+                <button class="w-full rounded overflow-hidden cursor-pointer thumb" data-src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2017.24.49.mp4">
+                  <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.28.jpeg" class="w-full rounded" alt="Video 17.24.49" />
+                </button>
+                <button class="w-full rounded overflow-hidden cursor-pointer thumb" data-src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2017.24.22.mp4">
+                  <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.38.27.jpeg" class="w-full rounded" alt="Video adicional" />
+                </button>
+              </div>
+            </aside>
+          </div>
+          
+          <div class="mt-12 grid md:grid-cols-3 gap-6">
+            <div class="bg-section p-6 rounded">
+              <h4 class="font-bold">Workflow</h4>
+              <ol class="mt-3 text-bodymuted list-decimal list-inside">
+                <li>Brief y referencias</li>
+                <li>Preproducción (storyboards, plan de rodaje)</li>
+                <li>Rodaje</li>
+                <li>Postproducción y entrega</li>
+              </ol>
+            </div>
+            <div class="bg-section p-6 rounded">
+              <h4 class="font-bold">Equipamiento</h4>
+              <p class="text-bodymuted mt-2">Cámaras RED/ARRI, lentes cine, gimbals, drones y rigs profesionales.</p>
+            </div>
+            <div class="bg-section p-6 rounded">
+              <h4 class="font-bold">Casos de Estudio</h4>
+              <p class="text-bodymuted mt-2">Spot B: campaña multiplataforma con incremento de conversión del 22%.</p>
+            </div>
+          </div>
+
+          <div class="mt-16">
+            <h4 class="font-heading text-xl font-bold mb-4">Showreel & Proyectos</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.21.40.jpeg" class="w-full h-48 object-cover"/><div class="p-4"><strong class="font-bold">Showreel 2026</strong><p class="text-bodymuted mt-2">Compilación de proyectos visuales y de rodaje.</p></div></div>
+              <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.08.jpeg" class="w-full h-48 object-cover"/><div class="p-4"><strong class="font-bold">Documental</strong><p class="text-bodymuted mt-2">Proyecto documental con enfoque narrativo y cinematográfico.</p></div></div>
+              <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.28.jpeg" class="w-full h-48 object-cover"/><div class="p-4"><strong class="font-bold">Branded Content</strong><p class="text-bodymuted mt-2">Historias de marca con fuerte estética visual.</p></div></div>
+            </div>
+          </div>
+
+          <div class="mt-12 grid md:grid-cols-4 gap-4">
+            <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.38.27.jpeg" class="w-full h-40 object-cover"/><div class="p-4"><strong class="font-bold">B-roll</strong><p class="text-bodymuted mt-2">Imágenes de apoyo para edición y montaje.</p></div></div>
+            <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2017.06.28.jpeg" class="w-full h-40 object-cover"/><div class="p-4"><strong class="font-bold">Dirección de Arte</strong><p class="text-bodymuted mt-2">Fotografías que refuerzan visualmente la narrativa.</p></div></div>
+            <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.21.40.jpeg" class="w-full h-40 object-cover"/><div class="p-4"><strong class="font-bold">Look & Feel</strong><p class="text-bodymuted mt-2">Referencias de estilo y color para el rodaje.</p></div></div>
+            <div class="bg-section rounded overflow-hidden"><img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.08.jpeg" class="w-full h-40 object-cover"/><div class="p-4"><strong class="font-bold">Fotografía de Set</strong><p class="text-bodymuted mt-2">Visuales que acompañan la producción de video.</p></div></div>
+          </div>
+
+          <div class="mt-16">
+            <h4 class="font-heading text-xl font-bold mb-4">Videos completos</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-section rounded overflow-hidden p-4">
+                <video controls class="w-full h-56 object-cover rounded" src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2016.44.52.mp4"></video>
+                <div class="p-4"><strong class="font-bold">Full Video 1</strong><p class="text-bodymuted mt-2">Rodaje de producción y escenas de campaña.</p></div>
+              </div>
+              <div class="bg-section rounded overflow-hidden p-4">
+                <video controls class="w-full h-56 object-cover rounded" src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2017.24.22.mp4"></video>
+                <div class="p-4"><strong class="font-bold">Full Video 2</strong><p class="text-bodymuted mt-2">Contenidos de marca con estética cinematográfica.</p></div>
+              </div>
+              <div class="bg-section rounded overflow-hidden p-4">
+                <video controls class="w-full h-56 object-cover rounded" src="VIDEO%20%26%20FILMMAKING/WhatsApp%20Video%202026-06-05%20at%2017.24.49.mp4"></video>
+                <div class="p-4"><strong class="font-bold">Full Video 3</strong><p class="text-bodymuted mt-2">Material de evento y producción en vivo.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16">
+            <h4 class="font-heading text-xl font-bold mb-4">Precios y Paquetes</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="p-6 bg-sectionMid rounded">Básico — 1 día de rodaje · Edición simple</div>
+              <div class="p-6 bg-sectionMid rounded">Profesional — 2-3 días · Color grading incluido</div>
+              <div class="p-6 bg-sectionMid rounded">Premium — Producción completa · Entregables masters</div>
+            </div>
+          </div>
+          
+          <section class="mt-16 bg-section p-6 rounded">
+            <h4 class="font-bold">Equipo & Roles</h4>
+            <div class="mt-3 text-bodymuted grid md:grid-cols-3 gap-4">
+              <div><strong>Director</strong><div class="text-bodymuted">Dirección creativa y supervisión de set.</div></div>
+              <div><strong>Director de Fotografía</strong><div class="text-bodymuted">Diseño de la estética visual y cámara.</div></div>
+              <div><strong>Productor</strong><div class="text-bodymuted">Logística, permisos y coordinación.</div></div>
+            </div>
+          </section>
+
+          <section class="mt-12 bg-section p-6 rounded">
+            <h4 class="font-bold">Especificaciones Técnicas</h4>
+            <ul class="mt-3 text-bodymuted list-disc list-inside">
+              <li>Formatos: ProRes 422 HQ, H.264, H.265</li>
+              <li>Resoluciones: 4K DCI / UHD / 1080p</li>
+              <li>Entrega: masters + web versions + thumbnails</li>
+            </ul>
+          </section>
+
+          <section class="mt-12 bg-section p-6 rounded">
+            <h4 class="font-bold">Shotlist y Plan de Rodaje (ejemplo)</h4>
+            <ol class="mt-3 text-bodymuted list-decimal list-inside">
+              <li>Setup — luz clave, tests de cámara</li>
+              <li>Escena 1 — plano general y detalle producto</li>
+              <li>Escena 2 — entrevistas y b-roll</li>
+              <li>Wrap — backups y revisión de material</li>
+            </ol>
+          </section>
+
+          <section class="mt-12 bg-section p-6 rounded">
+            <h4 class="font-bold">Preguntas Frecuentes</h4>
+            <details class="mt-3"><summary class="text-bodymuted">¿Cuánto dura la postproducción?</summary><div class="mt-2 text-bodymuted">Dependiendo del alcance, entre 1 y 6 semanas. El color grading puede requerir revisiones adicionales.</div></details>
+            <details class="mt-3"><summary class="text-bodymuted">¿Proveen locaciones y casting?</summary><div class="mt-2 text-bodymuted">Sí — gestionamos locaciones, permisos y casting según el proyecto.</div></details>
+          </section>
+
+          <section class="mt-12">
+            <h4 class="font-heading text-xl font-bold mb-4">Testimonios</h4>
+            <div class="space-y-4">
+              <div class="p-4 bg-section rounded">"La producción fue impecable y el resultado visual, increíble." <div class="text-bodymuted mt-2">— Cliente Z</div></div>
+              <div class="p-4 bg-section rounded">"Profesionales en cada etapa del proceso." <div class="text-bodymuted mt-2">— Agencia Y</div></div>
+            </div>
+          </section>
+
+          <div class="mt-20 text-center">
+            <a href="index.html#contact" class="btn-accent px-8 py-3 rounded">Solicitar Cotización</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-12 text-center text-bodymuted">© ON FIRE STUDIO</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fotografía — ON FIRE STUDIO</title>
+  <meta name="description" content="Fotografía editorial y comercial — ON FIRE STUDIO" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    window.tailwind = { config: { theme: { extend: { colors: { canvas: '#000000', section: '#121212', sectionMid: '#1A1A1A', divider: '#262626', bodymuted: '#A3A3A3', accent: '#FF0033' }, fontFamily: { heading: ['Montserrat','system-ui','sans-serif'], body: ['Inter','system-ui','sans-serif'] }, spacing: {'1':'8px','2':'16px','3':'24px','4':'32px','5':'40px','6':'48px','7':'56px','8':'64px'} } } } }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme: dark} body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';background:#000;color:#fff}
+    h1,h2,h3{font-family:Montserrat}
+    .divider{border-bottom:1px solid #262626}
+    .btn-accent{background:#FF0033;color:#fff}
+    .masonry{column-gap:16px}
+    .wave-bar{width:4px;background:#333;height:8px}
+  </style>
+</head>
+<body class="bg-canvas text-white">
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm bg-black/40 border-b border-divider">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 font-heading font-bold"><img src="logo/logo-blanco.jpeg" alt="ON FIRE STUDIO" width="36" height="36" class="object-contain" /><span>ON FIRE STUDIO</span></a>
+      <nav class="flex gap-6 text-bodymuted">
+        <a href="photography.html" class="text-white">Fotografía</a>
+        <a href="video.html">Video</a>
+        <a href="sound.html">Sonido</a>
+        <a href="design.html">Diseño</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <section class="min-h-screen relative text-white">
+      <div class="absolute inset-0 bg-[url('FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.08.jpeg')] bg-cover bg-center mix-blend-overlay opacity-60"></div>
+      <div class="relative max-w-6xl mx-auto px-6 py-20">
+        <h1 class="text-7xl font-heading font-extrabold">FOTOGRAFÍA</h1>
+        <p class="mt-6 max-w-3xl text-bodymuted">Enfoque editorial y técnico. Exploramos luz, textura y composición para crear imágenes que comunican con fuerza y sutileza.</p>
+        <a href="index.html#contact" class="mt-8 inline-block btn-accent px-6 py-3 rounded">Contáctanos</a>
+
+        <div class="mt-16 grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="font-heading text-2xl font-bold">Filosofía</h3>
+            <p class="mt-4 text-bodymuted">Trabajamos con dirección de arte precisa, iluminación controlada y una narrativa visual que prioriza intención sobre decoración. Cada sesión se orienta a lograr coherencia estética y eficacia comercial.</p>
+          </div>
+          <div>
+            <p class="text-bodymuted">Colaboramos con fotógrafos especializados en producto, moda y retrato. Nuestra infraestructura incluye equipos de cámara full-frame, lentes prime y un equipo de postproducción experto en retoque avanzado.</p>
+          </div>
+        </div>
+        <div class="mt-16">
+          <h4 class="font-heading text-xl font-bold mb-4">Galería</h4>
+          <div class="masonry columns-1 md:columns-3 gap-4 local-gallery">
+            <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.21.40.jpeg" alt="Retrato deportivo" class="mb-4 w-full rounded" />
+            <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.08.jpeg" alt="Retrato de estilo editorial" class="mb-4 w-full rounded" />
+            <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.22.28.jpeg" alt="Retrato en locación urbana" class="mb-4 w-full rounded" />
+            <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2016.38.27.jpeg" alt="Retrato marital editorial" class="mb-4 w-full rounded" />
+            <img src="FOTOGRAFIA/WhatsApp%20Image%202026-06-05%20at%2017.06.28.jpeg" alt="Retrato con girasol" class="mb-4 w-full rounded" />
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h4 class="font-heading text-xl font-bold mb-4">Video</h4>
+          <div class="video-wrapper">
+            <video controls class="responsive-video">
+              <source src="FOTOGRAFIA/WhatsApp%20Video%202026-06-05%20at%2017.24.49.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+          </div>
+        </div>
+
+        <div class="mt-16 grid md:grid-cols-3 gap-6">
+          <div class="bg-section p-6 rounded">
+            <h4 class="font-bold">Paquetes</h4>
+            <p class="text-bodymuted mt-2">Desde sesiones rápidas hasta producciones completas con estilismo y set.</p>
+            <ul class="mt-3 text-bodymuted list-disc list-inside">
+              <li>Básico — 4 horas · Retoque básico · Entregables digitales</li>
+              <li>Profesional — 8 horas · Retoque avanzado · Entregables PSD/TIFF</li>
+              <li>Premium — Jornada completa · Estilismo · Producción</li>
+            </ul>
+          </div>
+          <div class="bg-section p-6 rounded">
+            <h4 class="font-bold">Infraestructura</h4>
+            <p class="text-bodymuted mt-2">Cámaras RED/ARRI, lentes prime, iluminación Profoto y estaciones de retoque profesional.</p>
+          </div>
+          <div class="bg-section p-6 rounded">
+            <h4 class="font-bold">Casos de Estudio</h4>
+            <p class="text-bodymuted mt-2">Proyecto A: Branding de producto con campaña 360º — resultados +35% engagement.</p>
+          </div>
+        </div>
+
+        <section class="mt-12 bg-section p-6 rounded">
+          <h4 class="font-bold">Equipo</h4>
+          <div class="mt-3 grid md:grid-cols-3 gap-4 text-bodymuted">
+            <div><strong>Fotógrafo Principal</strong><div class="mt-2">Dirección creativa y fotografía en set.</div></div>
+            <div><strong>Retocador</strong><div class="mt-2">Retoque avanzado, color y finishing.</div></div>
+            <div><strong>Estilista</strong><div class="mt-2">Dirección de looks y props.</div></div>
+          </div>
+        </section>
+
+        <section class="mt-8 bg-section p-6 rounded">
+          <h4 class="font-bold">Nuestro Proceso</h4>
+          <ol class="mt-3 list-decimal list-inside text-bodymuted">
+            <li>Brief & Research: referencias, moodboards y objetivos.</li>
+            <li>Preproducción: scouting, estilismo y pruebas de luz.</li>
+            <li>Rodaje: dirección, iluminación y captura RAW.</li>
+            <li>Postproducción: selección, color grading y retoque avanzado.</li>
+            <li>Entrega: masters, variantes y archivos listos para producción.</li>
+          </ol>
+        </section>
+
+        <section class="mt-8 bg-section p-6 rounded">
+          <h4 class="font-bold">Licenciamiento y Uso</h4>
+          <p class="text-bodymuted mt-2">Ofrecemos licencias por campaña, por tiempo y exclusivas. Entregamos archivos para web, print y grandes formatos, con especificaciones técnicas claras para uso comercial.</p>
+        </section>
+
+        <section class="mt-8 bg-section p-6 rounded">
+          <h4 class="font-bold">Workshops y Masterclasses</h4>
+          <p class="text-bodymuted mt-2">Impartimos talleres intensivos de iluminación, dirección de moda y postproducción para equipos y marcas.</p>
+        </section>
+
+        <section class="mt-8 bg-section p-6 rounded">
+          <h4 class="font-bold">Clientes</h4>
+          <div class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-4 text-bodymuted">
+            <div class="p-4 bg-sectionMid rounded">Marca A</div>
+            <div class="p-4 bg-sectionMid rounded">Marca B</div>
+            <div class="p-4 bg-sectionMid rounded">Revista X</div>
+            <div class="p-4 bg-sectionMid rounded">E-commerce Y</div>
+          </div>
+        </section>
+
+        <section class="mt-12">
+          <h4 class="font-heading text-xl font-bold mb-4">Preguntas Frecuentes</h4>
+          <details class="mt-3"><summary class="text-bodymuted">¿Ofrecen estilismo y modelos?</summary><div class="mt-2 text-bodymuted">Sí, gestionamos estilismo, casting y dirección de talento cuando el proyecto lo requiere.</div></details>
+          <details class="mt-3"><summary class="text-bodymuted">¿Entregan archivos RAW?</summary><div class="mt-2 text-bodymuted">Los masters en RAW se entregan según el paquete y acuerdo de licencia.</div></details>
+        </section>
+
+        <section class="mt-12">
+          <h4 class="font-heading text-xl font-bold mb-4">Testimonios</h4>
+          <div class="space-y-6">
+            <div class="p-6 bg-section rounded">"Calidad excepcional y entrega rápida." <div class="text-bodymuted mt-2">— Cliente X</div></div>
+            <div class="p-6 bg-section rounded">"Trabajo profesional y creativo." <div class="text-bodymuted mt-2">— Cliente Y</div></div>
+          </div>
+        </section>
+
+        <div class="mt-20 text-center">
+          <a href="index.html#contact" class="btn-accent px-8 py-3 rounded">Solicitar Presupuesto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 text-center text-bodymuted">© ON FIRE STUDIO</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
